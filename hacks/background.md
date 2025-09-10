@@ -4,15 +4,15 @@ layout: base
 title: Background with Object
 description: Use JavaScript to have an in motion background.
 # Img paths for the page, referenced later.
-sprite: images/platformer/sprites/flying-ufo.png
-background: images/platformer/backgrounds/alien_planet1.jpg
+sprite: images/platformer/sprites/dementor2.png # Custom background and image imported sprites from pages
+background: images/platformer/backgrounds/alien_planet2.jpg
 permalink: /background
 ---
 <!--HTML for the page setup, <script> contains embedded javaScript. GOD I HATE HTML COMMENTS THEY'RE HIDEOUS!!!!!!!!!!!--> 
 <canvas id="world"></canvas>
-<!-- Logic for gmame -->
+<!-- Logic for game -->
 <script>
-  const canvas = document.getElementById("world");
+  const canvas = document.getElementById("world"); //defining variables
   const ctx = canvas.getContext('2d');
   const backgroundImg = new Image();
   const spriteImg = new Image();
@@ -27,7 +27,7 @@ permalink: /background
     imagesLoaded++;
     startGameWorld();
   };
-  function startGameWorld() {
+  function startGameWorld() { //Initialization for game world definitions here
     if (imagesLoaded < 2) return;
     class GameObject {
       constructor(image, width, height, x = 0, y = 0, speedRatio = 0) {
