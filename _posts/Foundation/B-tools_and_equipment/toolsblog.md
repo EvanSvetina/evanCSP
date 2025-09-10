@@ -3,7 +3,7 @@
 layout: base
 title: Tools Purgatory Pt. 2
 description: My experience with tools setup (better this time)
-permalink: /blog/tools
+permalink: /toolsXP
 ---
 ## Smooth Setup & Verification
 
