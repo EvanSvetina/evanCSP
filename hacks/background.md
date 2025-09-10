@@ -1,6 +1,6 @@
 ---
 # YML (yaml) front matter. this determines metadata for file which GHPages uses
-layout: base
+layout: post
 title: Background with Object
 description: Use JavaScript to have an in motion background.
 # Img paths for the page, referenced later.
